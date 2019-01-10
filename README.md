@@ -1,0 +1,2 @@
+# StudentB
+Work for class
