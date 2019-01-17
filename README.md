@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Resume</title>
-</head>
 <body>
 
 <h1>Bailey Attkins's Resume</h1>
