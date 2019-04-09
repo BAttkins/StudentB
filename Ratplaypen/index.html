@@ -48,31 +48,37 @@
 section#Home .content {
   margin-left: 220px;
 }
-  div.gallery {
-            margin: 5px;
-            border: 1px solid #ccc;
-            float: left;
-            width: 180px;
-        }
-        
-        div.gallery:hover {
-            border: 1px solid #777;
-        }
-        
-        div.gallery img {
-            width: 100%;
-            height: auto;
-        }
-        
-        div.desc {
-            padding: 15px;
-            text-align: center;
-          }
-          
-          .center {
-  margin: auto;
-  width: 50%;
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical
 }
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
 #page-container {
   position: relative;
   min-height: 100vh;
@@ -107,24 +113,31 @@ section#Home .content {
   <div class="display-Left">
     <span class="text-white" style="font-size:90px">Rat Playpen</span>
   </div>
-  <section id="/shop.html">
-    <h1>Products</h1>
-      <div class="center"><div class="gallery">
-            <img src="https://i.etsystatic.com/16216304/r/il/6d2c83/1491328566/il_794xN.1491328566_3b1y.jpg" alt="Hammock" width="600" height="400">
-        </a>
-        <div class="desc">Handmade Hammock</div>
-      </div>
-  <div class="gallery">
-            <img src="https://i.etsystatic.com/13868984/r/il/12c5d2/1570544056/il_794xN.1570544056_muqi.jpg" alt="Hammock Set" width="600" height="400">
-        </a>
-        <div class="desc">Handmade Hammock Set for your cage.</div>
-      </div>
-  <div class="gallery">
-            <img src="https://i.pinimg.com/736x/c9/c7/07/c9c7075ad84d1ac440df9ffecfbac10c--pet-mice-pet-rats.jpg" alt="Treats" width="600" height="400">
-        </a>
-  <div class="desc">Handmade Treats.</div>
-      </div>
-  </div>
+  <section id="/contact.html">
+    <h1><b>Contact Us</b></h1>
+      <div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
  </div>
 </body>
 
