@@ -73,7 +73,14 @@ section#Home .content {
   margin: auto;
   width: 50%;
 }
- #footer {
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+#footer {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -94,6 +101,9 @@ section#Home .content {
     </div>
   </header>
 <body>
+  <body>
+ <div id="page-container">
+   <div id="content-wrap">
   <div class="display-Left">
     <span class="text-white" style="font-size:90px">Rat Playpen</span>
   </div>
@@ -115,12 +125,10 @@ section#Home .content {
   <div class="desc">Handmade Treats.</div>
       </div>
   </div>
-  </div>
  </div>
 </body>
 
-
-<footer>
+   <footer id="footer"></footer>
   <br><div class="center"><p class="copyright-text">Copyright &copy; 2019 All Rights Reserved by 
   Rat Playpen</a></div>
 </footer>
